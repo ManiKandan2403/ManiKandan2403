@@ -40,21 +40,21 @@ export const DEFAULT_PROFILE_CONFIG: ProfileConfig = {
 export const INITIAL_TECH_ITEMS: TechItem[] = [
   // Languages
   {
-    id: 'js',
-    name: 'JavaScript (ES6+)',
-    category: 'languages',
-    iconUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-    purpose: 'Client-side dynamics & full-stack logic',
-    badgeCode: 'js',
-    enabled: true
-  },
-  {
     id: 'ts',
     name: 'TypeScript',
     category: 'languages',
     iconUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
     purpose: 'Type-safe scalable codebases',
     badgeCode: 'ts',
+    enabled: true
+  },
+  {
+    id: 'js',
+    name: 'JavaScript (ES6+)',
+    category: 'languages',
+    iconUrl: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    purpose: 'Client-side dynamics & full-stack logic',
+    badgeCode: 'js',
     enabled: true
   },
   {
@@ -187,18 +187,27 @@ export const INITIAL_TECH_ITEMS: TechItem[] = [
 export const INITIAL_PROJECTS: ProjectItem[] = [
   {
     id: 'p1',
+    title: 'ManiKandan2403',
+    description: "Special GitHub Profile README repository featuring clean architecture, developer workstation artwork, and live metrics.",
+    tags: ['TypeScript', 'GitHub Actions', 'Markdown'],
+    repoUrl: 'https://github.com/ManiKandan2403/ManiKandan2403',
+    demoUrl: 'https://github.com/ManiKandan2403/ManiKandan2403',
+    isRealRepo: true
+  },
+  {
+    id: 'p2',
     title: 'Portfolio',
     description: "Official personal portfolio website presenting projects, technology background, skills, and contact links in a clean modern interface.",
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    tags: ['TypeScript', 'React', 'Tailwind CSS'],
     repoUrl: 'https://github.com/ManiKandan2403/Portfolio',
     demoUrl: 'https://github.com/ManiKandan2403/Portfolio',
     isRealRepo: true
   },
   {
-    id: 'p2',
+    id: 'p3',
     title: 'My-Portofolio',
     description: "Interactive web portfolio showcase highlighting development work, responsive layouts, and structured project sections.",
-    tags: ['Frontend', 'Responsive Design', 'Web'],
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
     repoUrl: 'https://github.com/ManiKandan2403/My-Portofolio',
     demoUrl: 'https://github.com/ManiKandan2403/My-Portofolio',
     isRealRepo: true
@@ -293,6 +302,7 @@ developer:
   title: ${config.role}
   github: "@${config.githubUsername}"
   location: "India"
+  status: "🟢 Open to Opportunities"
   expertise:
     - Frontend Architecture & Modern UI/UX
     - Full-Stack Web Development
@@ -420,12 +430,12 @@ ${renderCategoryTable('🌐 Languages & Core', 'languages')}${renderCategoryTabl
     <tr>
       <td valign="top" align="center">
         <a href="https://github.com/${config.githubUsername}">
-          <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=${config.githubUsername}&show_icons=true&title_color=${primaryHex.toLowerCase()}&text_color=374151&icon_color=${secondaryHex.toLowerCase()}&bg_color=ffffff&border_color=e2e8f0&hide_border=false&locale=en" alt="${config.name} GitHub Stats" width="410" />
+          <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=${config.githubUsername}&show_icons=true&include_all_commits=true&count_private=true&title_color=${primaryHex.toLowerCase()}&text_color=374151&icon_color=${secondaryHex.toLowerCase()}&bg_color=ffffff&border_color=e2e8f0&hide_border=false&locale=en" alt="${config.name} GitHub Stats" width="410" />
         </a>
       </td>
       <td valign="top" align="center">
         <a href="https://github.com/${config.githubUsername}">
-          <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=${config.githubUsername}&layout=compact&title_color=${primaryHex.toLowerCase()}&text_color=374151&icon_color=${secondaryHex.toLowerCase()}&bg_color=ffffff&border_color=e2e8f0&hide_border=false" alt="Top Languages" width="370" />
+          <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=${config.githubUsername}&layout=compact&langs_count=8&hide_title=false&include_all_commits=true&count_private=true&title_color=${primaryHex.toLowerCase()}&text_color=374151&icon_color=${secondaryHex.toLowerCase()}&bg_color=ffffff&border_color=e2e8f0&hide_border=false" alt="Top Languages" width="370" />
         </a>
       </td>
     </tr>
@@ -572,7 +582,7 @@ jobs:
 
       # Step 2: Push the generated SVG files to the output branch
       - name: Deploy snake SVG to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist

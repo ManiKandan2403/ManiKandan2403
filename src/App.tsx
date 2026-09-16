@@ -107,7 +107,7 @@ export default function App() {
             <FolderGit2 className="w-4 h-4" />
             <span>Repositories</span>
             <span className="bg-[#EFF1F3] text-[#656D76] px-1.5 py-0.2 rounded-full text-[11px] font-semibold">
-              2
+              3
             </span>
           </a>
 
@@ -286,8 +286,41 @@ export default function App() {
                 </a>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                {/* Repo 1: Portfolio */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+                {/* Repo 1: ManiKandan2403 Profile Repo */}
+                <div className="bg-white border border-[#D0D7DE] rounded-md p-4 flex flex-col justify-between space-y-3 hover:border-slate-400 transition-colors">
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <a
+                        href="https://github.com/ManiKandan2403/ManiKandan2403"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-xs font-semibold text-[#0969DA] hover:underline truncate"
+                      >
+                        ManiKandan2403
+                      </a>
+                      <span className="text-[10px] text-[#656D76] font-medium border border-[#D0D7DE] px-1.5 py-0.2 rounded-full shrink-0">
+                        Public
+                      </span>
+                    </div>
+                    <p className="text-xs text-[#656D76] leading-relaxed">
+                      Special GitHub Profile README repository featuring clean architecture, developer workstation artwork, and live metrics.
+                    </p>
+                  </div>
+
+                  <div className="flex items-center gap-4 text-xs text-[#656D76]">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#3178C6]" />
+                      <span>TypeScript</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Star className="w-3.5 h-3.5" />
+                      <span>0</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Repo 2: Portfolio */}
                 <div className="bg-white border border-[#D0D7DE] rounded-md p-4 flex flex-col justify-between space-y-3 hover:border-slate-400 transition-colors">
                   <div className="space-y-1.5">
                     <div className="flex items-center justify-between">
@@ -299,7 +332,7 @@ export default function App() {
                       >
                         Portfolio
                       </a>
-                      <span className="text-[10px] text-[#656D76] font-medium border border-[#D0D7DE] px-1.5 py-0.2 rounded-full">
+                      <span className="text-[10px] text-[#656D76] font-medium border border-[#D0D7DE] px-1.5 py-0.2 rounded-full shrink-0">
                         Public
                       </span>
                     </div>
@@ -310,8 +343,8 @@ export default function App() {
 
                   <div className="flex items-center gap-4 text-xs text-[#656D76]">
                     <div className="flex items-center gap-1.5">
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#F1E05A]" />
-                      <span>JavaScript</span>
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#3178C6]" />
+                      <span>TypeScript</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Star className="w-3.5 h-3.5" />
@@ -320,7 +353,7 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Repo 2: My-Portofolio */}
+                {/* Repo 3: My-Portofolio */}
                 <div className="bg-white border border-[#D0D7DE] rounded-md p-4 flex flex-col justify-between space-y-3 hover:border-slate-400 transition-colors">
                   <div className="space-y-1.5">
                     <div className="flex items-center justify-between">
@@ -332,7 +365,7 @@ export default function App() {
                       >
                         My-Portofolio
                       </a>
-                      <span className="text-[10px] text-[#656D76] font-medium border border-[#D0D7DE] px-1.5 py-0.2 rounded-full">
+                      <span className="text-[10px] text-[#656D76] font-medium border border-[#D0D7DE] px-1.5 py-0.2 rounded-full shrink-0">
                         Public
                       </span>
                     </div>

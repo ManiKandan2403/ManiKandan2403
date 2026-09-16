@@ -62,6 +62,7 @@ developer:
   title: Full Stack Developer
   github: "@ManiKandan2403"
   location: "India"
+  status: "🟢 Open to Opportunities"
   expertise:
     - Frontend Architecture & Modern UI/UX
     - Full-Stack Web Development
@@ -98,7 +99,7 @@ developer:
 
   <!-- Overview Icon Ribbon -->
   <a href="#tech-stack--skills">
-    <img src="https://skillicons.dev/icons?i=js,ts,react,html,css,tailwind,nodejs,express,mongodb,postgres,git,github,vscode,postman&theme=light&perline=7" alt="Tech Stack Icons" />
+    <img src="https://skillicons.dev/icons?i=ts,js,react,html,css,tailwind,nodejs,express,mongodb,postgres,git,github,vscode,postman&theme=light&perline=7" alt="Tech Stack Icons" />
   </a>
 
 </div>
@@ -208,12 +209,12 @@ developer:
     <tr>
       <td valign="top" align="center">
         <a href="https://github.com/ManiKandan2403">
-          <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=ManiKandan2403&show_icons=true&title_color=2563eb&text_color=374151&icon_color=7c3aed&bg_color=ffffff&border_color=e2e8f0&hide_border=false&locale=en" alt="ManiKandan GitHub Stats" width="410" />
+          <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=ManiKandan2403&show_icons=true&include_all_commits=true&count_private=true&title_color=2563eb&text_color=374151&icon_color=7c3aed&bg_color=ffffff&border_color=e2e8f0&hide_border=false&locale=en" alt="ManiKandan GitHub Stats" width="410" />
         </a>
       </td>
       <td valign="top" align="center">
         <a href="https://github.com/ManiKandan2403">
-          <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ManiKandan2403&layout=compact&title_color=2563eb&text_color=374151&icon_color=7c3aed&bg_color=ffffff&border_color=e2e8f0&hide_border=false" alt="Top Languages" width="370" />
+          <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ManiKandan2403&layout=compact&langs_count=8&hide_title=false&include_all_commits=true&count_private=true&title_color=2563eb&text_color=374151&icon_color=7c3aed&bg_color=ffffff&border_color=e2e8f0&hide_border=false" alt="Top Languages" width="370" />
         </a>
       </td>
     </tr>
