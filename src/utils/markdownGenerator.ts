@@ -229,7 +229,7 @@ export function generateMarkdown(
     sections.push(`<div align="center">
 
   <!-- Dynamic Waving Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,24&height=180&section=header&text=Hi%20%F0%9F%91%8B%2C%20I'm%20${encodeURIComponent(config.name)}&fontSize=42&fontAlignY=36&desc=Crafting%20Modern%20Web%20Experiences%20with%20Code%20%26%20Creativity&descAlignY=58&descSize=18&fontColor=1E293B" width="100%" alt="Hi, I'm ${config.name}" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,24&height=180&section=header&text=Hi%20%F0%9F%91%8B%2C%20I'm%20${encodeURIComponent(config.name)}&fontSize=42&fontAlignY=36&desc=Crafting%20Modern%20Web%20Experiences%20with%20Code%20and%20Creativity&descAlignY=58&descSize=18&fontColor=1E293B" width="100%" alt="Hi, I'm ${config.name}" />
 
   <!-- Animated Typing SVG -->
   <a href="https://github.com/${config.githubUsername}">
@@ -259,7 +259,7 @@ export function generateMarkdown(
     if (config.visibleSections.illustration) {
       sections.push(`  <!-- Developer Workstation Illustration -->
   <p align="center">
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" width="680" alt="Developer at clean modern coding workstation" style="border-radius: 12px;" />
+    <img src="./developer-light.svg" width="680" alt="Developer Workstation Illustration" style="border-radius: 12px; max-width: 100%;" />
   </p>`);
     }
 

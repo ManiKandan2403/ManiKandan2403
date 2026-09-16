@@ -31,6 +31,7 @@ export const GitHubPreview: React.FC<GitHubPreviewProps> = ({
   projects
 }) => {
   const [snakeSimulated, setSnakeSimulated] = useState(false);
+  const [illustrationStyle, setIllustrationStyle] = useState<'svg' | 'art'>('svg');
   const enabledTech = techItems.filter(t => t.enabled);
   const primaryHex = config.primaryAccent.replace('#', '');
   const secondaryHex = config.secondaryAccent.replace('#', '');
@@ -81,7 +82,7 @@ export const GitHubPreview: React.FC<GitHubPreviewProps> = ({
             {/* Waving Capsule Header */}
             <div className="w-full overflow-hidden rounded-xl bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 p-1 border border-slate-200">
               <img
-                src={`https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,24&height=180&section=header&text=Hi%20%F0%9F%91%8B%2C%20I'm%20${encodeURIComponent(config.name)}&fontSize=42&fontAlignY=36&desc=Crafting%20Modern%20Web%20Experiences%20with%20Code%20%26%20Creativity&descAlignY=58&descSize=18&fontColor=1E293B`}
+                src={`https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,24&height=180&section=header&text=Hi%20%F0%9F%91%8B%2C%20I'm%20${encodeURIComponent(config.name)}&fontSize=42&fontAlignY=36&desc=Crafting%20Modern%20Web%20Experiences%20with%20Code%20and%20Creativity&descAlignY=58&descSize=18&fontColor=1E293B`}
                 alt={`Hi, I'm ${config.name}`}
                 className="w-full object-cover rounded-lg"
                 loading="lazy"
@@ -149,14 +150,39 @@ export const GitHubPreview: React.FC<GitHubPreviewProps> = ({
               )}
             </div>
 
-            {/* Vector Developer Workstation Illustration */}
+            {/* Illustrated Developer Workstation Artwork */}
             {config.visibleSections.illustration && (
-              <div className="pt-4 flex justify-center">
+              <div className="pt-4 flex flex-col items-center">
+                <div className="w-full max-w-2xl flex items-center justify-end mb-2 gap-1 text-[11px] text-[#656D76]">
+                  <span className="mr-1">Illustration Style:</span>
+                  <button
+                    onClick={() => setIllustrationStyle('svg')}
+                    className={`px-2.5 py-0.5 rounded-md font-medium transition-colors ${
+                      illustrationStyle === 'svg'
+                        ? 'bg-blue-100 text-blue-800 font-semibold'
+                        : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+                    }`}
+                  >
+                    Custom SVG
+                  </button>
+                  <button
+                    onClick={() => setIllustrationStyle('art')}
+                    className={`px-2.5 py-0.5 rounded-md font-medium transition-colors ${
+                      illustrationStyle === 'art'
+                        ? 'bg-purple-100 text-purple-800 font-semibold'
+                        : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+                    }`}
+                  >
+                    Digital Art
+                  </button>
+                </div>
+
                 <div className="w-full max-w-2xl rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white p-2">
                   <img
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
-                    alt="Developer at clean modern coding workstation"
-                    className="w-full h-auto rounded-xl object-cover"
+                    src={illustrationStyle === 'svg' ? '/developer-light.svg' : '/developer-illustration.jpg'}
+                    alt="Developer at clean modern coding workstation illustration"
+                    referrerPolicy="no-referrer"
+                    className="w-full h-auto rounded-xl object-contain"
                   />
                 </div>
               </div>

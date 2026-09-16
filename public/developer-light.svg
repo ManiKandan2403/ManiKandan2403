@@ -41,7 +41,7 @@
     <path d="M 640 60 L 670 40 L 700 60" fill="none" stroke="#C4B5FD" stroke-width="3" stroke-linecap="round" />
   </g>
 
-  <!-- Left Side: Floating Code Windows & Stack Chips -->
+  <!-- Left Side: Floating Code Windows and Stack Chips -->
   <!-- Floating Window 1 -->
   <g transform="translate(60, 110)" filter="url(#softShadow)">
     <rect width="210" height="130" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
@@ -75,7 +75,7 @@
     <text x="36" y="22" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#1E293B">TypeScript</text>
   </g>
 
-  <!-- Center-Right: Workstation & Developer Desk -->
+  <!-- Center-Right: Workstation and Developer Desk -->
   <g id="workstation" transform="translate(320, 60)">
     <!-- Desk Shadow -->
     <ellipse cx="200" cy="310" rx="190" ry="14" fill="#CBD5E1" opacity="0.6" />
